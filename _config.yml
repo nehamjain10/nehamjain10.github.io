@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Neham Jain"
-  avatar           : "profile.png"
+  avatar           : "bio-photo.jpg"
   bio              : "Senior Year @IIT Madras"
   location         : "Chennai"
   employer         :
@@ -100,7 +100,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/neham-jain/"
   orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
