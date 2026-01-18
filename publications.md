@@ -12,6 +12,10 @@ title: Publications
 
 ## Conference Papers
 
+- **SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction** [[Project]](https://imaging.cs.cmu.edu/smokeseer/)<br>
+  **Neham Jain**, Sebastian Scherer, Ioannis Gkioulekas<br>
+  *International Conference on 3D Vision (3DV)*, 2026.
+
 - **Counterfactual Explanations of Visual Recommender Systems** [[Paper]](https://dl.acm.org/doi/10.1145/3589335.3651484)<br>
   **Neham Jain**, et al.<br>
   *The Web Conference (WWW)*, 2024.<br>
@@ -20,14 +24,6 @@ title: Publications
 - **Towards Realistic Underwater Dataset Generation and Color Restoration** [[arXiv]](https://arxiv.org/abs/2211.14821)<br>
   **Neham Jain**, et al.<br>
   Guide: Prof. Kaushik Mitra, IIT Madras
-
----
-
-## Posters & Workshops
-
-- **SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction** [[Project]](https://imaging.cs.cmu.edu/smokeseer/)<br>
-  **Neham Jain**, Sebastian Scherer, Ioannis Gkioulekas<br>
-  *International Conference on 3D Vision (3DV)*, 2026.
 
 ---
 
