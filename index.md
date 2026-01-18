@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-Hi, my name is Neham, I am currently a Research Engineer at [Meta Reality Labs](https://about.meta.com/realitylabs/), where I work on building large scale multi-modal data pipelines and data curation for training foundation models. Previously, I graduated with a **Master of Science in Robotics** from [Carnegie Mellon University](https://www.ri.cmu.edu/) in May 2025, where I was fortunate to be advised by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) and collaborate with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/). My thesis was titled [*"SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction"*](https://www.ri.cmu.edu/app/uploads/2025/05/Neham_MSR_Thesis_Finally.pdf).
+Hi, my name is Neham, I am currently a Research Engineer at [Meta Reality Labs](https://about.meta.com/realitylabs/), where I am building large scale multi-modal data pipelines and data curation for training foundation models. Previously, I graduated with a **Master of Science in Robotics** from [Carnegie Mellon University](https://www.ri.cmu.edu/) in May 2025, where I was fortunate to be advised by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) and collaborate with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/). My thesis was titled [*"SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction"*](https://www.ri.cmu.edu/app/uploads/2025/05/Neham_MSR_Thesis_Finally.pdf).
 
 Prior to CMU, I earned my **Bachelor of Technology in Electrical Engineering** from [IIT Madras](https://www.iitm.ac.in/) with a Minor in Machine Learning.
 
