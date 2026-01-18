@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \color{teal}\vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{Gray}{\titlerule[2pt]}\vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingCustom}[6]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+      \hspace{-10pt}\small#5 & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingNew}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} | \textit{#3} & #2 \\
+      ~ & \textit{\small #4} \\
+    \end{tabular*}\vspace{-20pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\huge NEHAM JAIN} \\ 
+  \vspace{0.2cm}
+  \faEnvelopeO ~  \href{mailto:nehamjain2002@gmail.com}{\color{blue}\underline{nehamjain2002@gmail.com}}~
+   \faGithub~ \href{https://github.com/nehamjain10}{\color{blue}\underline{nehamjain10}}  ~
+  \faLinkedin~
+  \href{https://www.linkedin.com/in/neham-jain/}{\color{blue}\underline{Neham Jain}}
+  \faPhone~ {\color{blue}\underline{+1-901-208-2738}}
+\end{center}
+\vspace{.15cm}
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheadingCustom
+      {Carnegie Mellon University}{May 2025}
+      {Master of Science in Robotics, \textbf{Advisor: Prof. Ioannis Gkioulekas};  \textbf{GPA: 4.11/4.0}}{}
+      {\textbf{Relevant Coursework}: Deep Learning Systems, Learning for 3D Vision, Robot Learning, Physics based Rendering}{}
+      
+      
+    \resumeSubheadingCustom
+      {Indian Institute of Technology (IIT), Madras }{June 2023}
+      {Bachelor of Technology in Electrical Engineering;  \textbf{CGPA: 9.24/10}}{\textbf{Minor:} Machine Learning}{\textbf{Relevant Coursework}: Modern Computer Vision, Machine Learning, Computational Photography}{}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+
+\shorterSection{Skills}
+     \textbf{Languages}{: Python, C++, SQL, CUDA C, Java}
+     \hfill
+     \textbf{Libraries}{: PyTorch, JAX, ROS, OpenGL, Vulkan, NumPy}
+    
+\vspace{2mm}
+\shorterSection{Professional Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+   {Meta Reality Labs | Data Pipelines for Training Embodied AI Agents}{June 2025 - Present}{Research Engineer}{Pittsburgh, PA}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://arxiv.org/pdf/2510.16258}{Embody3D} dataset release}: built QA tools, coordinated annotation of \textbf{1.6M videos}, and curated \textbf{500 hours} of high-quality data—\textbf{187 GitHub stars}, \textbf{3 citations}, adopted by internal teams for training.
+    \item Built \textbf{automated quality filtering} algorithms to eliminate annotation bottlenecks and ensure high-quality data for training.
+    \item Achieved \textbf{75\% reduction} in tracking error rate by designing a \textbf{self-supervised data generation} to train keypoint model.
+\end{itemize}
+
+   \resumeSubheading
+   {Adobe Research |  Scalable Pipeline for Training 3D Foundation Models}{Summer 2024}{Research Engineer Intern}{San Francisco, CA}
+\begin{itemize}[leftmargin=*]
+    \item Created a \textbf{pipeline} to convert \textbf{synthetic mesh assets} into \textbf{relightable Gaussian Splats} for training \textbf{3D Foundation Models}.
+    \item Wrote \textbf{custom CUDA kernels} to replace \textbf{spherical harmonics} with \textbf{neural features} for \textbf{relightability} and \textbf{faster training}.
+    \item Scaled the training \textbf{pipeline} to 32 nodes and \textbf{improved training time} from \textbf{6 minutes} per asset to \textbf{30 seconds}. 
+\end{itemize}
+
+   \resumeSubheading
+   {Adobe Research | Counterfactual Explanations of Visual Recommender Systems \href{https://dl.acm.org/doi/10.1145/3589335.3651484}{[Paper]}
+}{Summer 2022}{Research Scientist Intern}{Bangalore, India}
+\begin{itemize}[leftmargin=*]
+    \item Worked on \textbf{counterfactual explanations} for \textbf{recommendation systems} based on \textbf{vision language models}.
+    \item Computed the \textbf{minimal meaningful perturbation} to an item’s \textbf{image-embedding} that would remove it from a user’s recommended list. Used \textbf{CLIP} to connect \textbf{image features} to \textbf{textual labels} to lend meaning to the \textbf{perturbations}.
+    \item Work was accepted at \textbf{WWW 2024} and a \textbf{patent} has been filed for our work at \textbf{USPTO}.
+\end{itemize}
+
+
+   \resumeSubheading
+   {Subex AI Labs $|$ Information extraction from unstructured invoices}{Summer 2021}{Machine Learning Intern}{Bangalore, India}
+\begin{itemize}[leftmargin=*]
+    \item Developed an end to end pipeline for \textbf{multilingual invoice understanding} and \textbf{table extraction} using object detection.
+    \item Fine-tuned a \textbf{multimodal document transformer} model (\textbf{Layout-LMv2}) to extract form fields using \textbf{token classification}.
+
+
+\end{itemize}
+
+\resumeSubHeadingListEnd
+
+\shorterSection{Relevant Projects}
+  \resumeSubHeadingListStart
+
+
+   \resumeSubheading
+   {Masters Thesis $|$  3D Gaussian splatting for reconstruction of wildfire scenes \href{https://imaging.cs.cmu.edu/smokeseer/}{[3DV 2026 Poster]}}{Fall 2023 - Present}{Guide: Dr. Ioannis Gkioulekas}{Pittsburgh, PA}
+\begin{itemize}[leftmargin=*]
+    \item Decomposed \textbf{wildfire scenes} into \textbf{smoke and surface Gaussians} for \textbf{smoke-free rendering} to assist firefighting.
+    \item Integrated \textbf{fluid particle hydrodynamics} into the \textbf{3D Gaussian Splatting} pipeline to accurately model the \textbf{temporal dependence of smoke}, resulting in more \textbf{realistic} and \textbf{artifact-free} reconstructions.
+    \item Adapted \textbf{Mast3r-SfM} to perform \textbf{localization} of the  \textbf{RGB} and \textbf{thermal} cameras in the same coordinate frame. 
+
+\end{itemize}
+
+
+%    \resumeSubheading
+%    {RGB-Thermal Sensor Fusion for ADAS Applications}{August 2022 - May 2023}{Guide: Prof. Aswin Sankaranarayanan (Carnegie Mellon University), Prof. Kaushik Mitra (IIT Madras)}{Pittsburgh, PA}
+% \begin{itemize}[leftmargin=*]
+%     % modify this to add name of project
+%     \item Proposed a \textbf{physics based approach} to create a \textbf{low-light RGB, well-lit RGB} and \textbf{thermal image} of the same scene.
+%     \item Implemented a novel \textbf{cross-attention architecture} to \textbf{super-resolve} thermal images using RGB as a \textbf{guide}.
+%     \item Used .
+    
+    
+% \end{itemize}
+
+ \resumeSubheading
+   {Needle - A Deep Learning Framework in Python \href{https://colab.research.google.com/drive/13xndhmKBW1cjgtueA5-biCThGCdB6waA?usp=sharing}{[Report]}}{Fall 2024}{Course Project for Deep Learning Systems }{Pittsburgh, PA}
+\begin{itemize}[leftmargin=*]
+    \item  Created a general purpose \textbf{library} for \textbf{differentiable programming} from scratch with support for \textbf{C} and \textbf{CUDA} backends 
+    \item Implemented features such as \textbf{gradient accumulation} and \textbf{distributed training (NCCL)} for training larger models.
+        \item Trained \textbf{Llama-3} architecture across \textbf{8 4090s} nodes on \textbf{OpenWebText} using custom \textbf{NCCL} and \textbf{Gloo} backend.
+
+\end{itemize}
+
+% \resumeSubheading
+% {Physically Based Ray Tracer with Spectral Rendering}{Spring 2024}{Course Project for Physics Based Rendering}{Pittsburgh, PA}
+% \begin{itemize}[leftmargin=*]
+% \item Implemented a \textbf{path tracer} with \textbf{multiple importance sampling} achieving realistic global illumination.
+
+% \item Integrated \textbf{spectral rendering} using measured wavelength data to simulate accurate light dispersion and chromatic effects.
+% \end{itemize}
+
+
+  \resumeSubheading
+   {Multiview Diffusion models for image to image translation}{Spring 2024}{Course Project for Learning for 3D Vision}{Pittsburgh, PA}
+\begin{itemize}[leftmargin=*]
+    \item Developed a \textbf{multiview-aware diffusion model} for translating between domains, such as day-to-night.
+    \item Designed a \textbf{conditional U-Net architecture} with multiview feature aggregation using \textbf{epipolar constraints}.
+    \end{itemize}
+
+%    \resumeSubheading
+%    {Geometry Constrained Gaussian Splatting \href{https://gcgsplatting.github.io/}{[Report]}}{Fall 2023}{Course Project for Geometry-based Methods in Vision }{Pittsburgh, PA}
+% \begin{itemize}[leftmargin=*]
+%     \item Incorporated geometric constraints such as \textbf{epipolar loss} and \textbf{depth loss} to improve \textbf{few-shot gaussian splatting}.
+%     \item Achieved a performance boost of about \textbf{5\%} across \textbf{PSNR, SSIM, LPIPS} on the NeRF LLFF dataset.
+
+% \end{itemize}
+
+
+
+%    \resumeSubheading
+%    {Undergraduate Research Project $|$ Color Restoration for Underwater Images \href{https://arxiv.org/abs/2211.14821}{[Paper]}}{Fall 2021 - Fall 2022}{Guide: Prof. Kaushik Mitra}{Chennai, India}
+% \begin{itemize}[leftmargin=*]
+%     \item Created a \textbf{multimodal domain adaptation (GANs)} technique to create a dataset for \textbf{different water conditions}.
+%     \item Existing \textbf{algorithms} trained on our \textbf{dataset} attained superior performance on underwater \textbf{image restoration} task.
+% \end{itemize}
+
+% \resumeSubHeadingListEnd
+
+
+% \shorterSection{Relevant Projects}
+%   \resumeSubHeadingListStart
+
+ 
+
+
+\resumeSubHeadingListEnd
+% \shorterSection{Relevant Coursework}
+%     \resumeSubHeadingListStart
+
+%       \item{ \textbf{Artificial Intelligence/Machine Learning:} Fundamentals of Deep Learning | Reinforcement Learning | Introduction to Machine Learning |  | Nonlinear optimisation	 | Information Theory}
+%       \item{ \textbf{Mathematics:} Mathematical Foundations of Robotics | Probability, Statistics and Stochastic Processes | Linear Algebra for Engineers | Applied Statistics | Functions of Several Variables | Series and Matrices  }
+%       \item{ \textbf{Computer Vision/Graphics:} Modern Computer Vision  | Computational Photography | Physics-based Rendering | Geometry based Methods in Vision | Computer Graphics}
+ 
+% \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+
+
+\end{document}
+
+
+ 
