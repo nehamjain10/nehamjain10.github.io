@@ -2,37 +2,46 @@
 layout: page
 ---
 
-layout: archive
-title: "About Me"
-permalink: /
-author_profile: true
-redirect_from:
-  - /about/
-  - /about.html
+# About Me
+
+<img src="https://nehamjain10.github.io/images/neham.jpg" class="floatpic">
+
+Hi! I'm **Neham Jain**, a Research Engineer at [Meta Reality Labs](https://about.meta.com/realitylabs/).
+
+I graduated with a **Master of Science in Robotics** from [Carnegie Mellon University](https://www.ri.cmu.edu/) (GPA: 4.11/4.0), where I was fortunate to be advised by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/). Prior to CMU, I earned my **Bachelor of Technology in Electrical Engineering** from [IIT Madras](https://www.iitm.ac.in/) (CGPA: 9.24/10) with a Minor in Machine Learning.
+
+My research focuses on **3D Computer Vision**, **Deep Learning Systems**, and **Robotic Perception**. I'm particularly interested in 3D Gaussian Splatting, neural rendering, and building scalable ML infrastructure.
+
+Feel free to reach out to me at **nehamjain2002 [at] gmail.com**
+
 ---
 
-I am a Master of Science in Robotics student at **Carnegie Mellon University**, advised by **Prof. Ioannis Gkioulekas**. I completed my Bachelor of Technology in Electrical Engineering at **Indian Institute of Technology (IIT), Madras** with a minor in Machine Learning.
+## Research Interests
 
-My research interests lie in the intersection of **Computer Vision**, **Computer Graphics**, and **Machine Learning**, with a focus on 3D reconstruction, rendering, and generative models.
+- 3D Computer Vision & Neural Rendering
+- Deep Learning Systems & CUDA Optimization
+- 3D Gaussian Splatting
+- Robotic Perception
+- Computational Photography
 
-Previous to my masters, I have interned at **Meta Reality Labs**, **Adobe Research**, and **Subex AI Labs**.
-
-## Education
-
-*   **Carnegie Mellon University**, Pittsburgh, PA
-    *   M.S. in Robotics, May 2025
-    *   **GPA:** 4.11/4.0
-    *   **Advisor:** Prof. Ioannis Gkioulekas
-    *   **Relevant Coursework:** Deep Learning Systems, Learning for 3D Vision, Robot Learning, Physics based Rendering
-
-*   **Indian Institute of Technology (IIT), Madras**, Chennai, India
-    *   B.Tech in Electrical Engineering, June 2023
-    *   **CGPA:** 9.24/10
-    *   **Minor:** Machine Learning
+---
 
 ## Skills
 
-*   **Languages:** Python, C++, SQL, CUDA C, Java
-*   **Libraries:** PyTorch, JAX, ROS, OpenGL, Vulkan, NumPy
+**Languages**: Python, C++, SQL, CUDA C, Java
 
+**Libraries & Frameworks**: PyTorch, JAX, ROS, OpenGL, Vulkan, NumPy
 
+---
+
+## News and Updates
+
+- **June 2025**: Started as Research Engineer at Meta Reality Labs!
+- **May 2025**: Graduated with MS in Robotics from CMU!
+- **Fall 2024**: [SmokeSeer](https://imaging.cs.cmu.edu/smokeseer/) accepted as a poster at 3DV 2026!
+- **Summer 2024**: Research internship at Adobe Research, San Francisco
+- **2024**: Paper accepted at WWW 2024 on Counterfactual Explanations for Recommender Systems
+
+---
+
+<br>

@@ -2,11 +2,9 @@
 #  BASIC SITE INFO
 # --------------------------------------------------
 title: Neham Jain
-tagline: Personal website of Neham Jain.
-description: Neham Jain is a Master of Science in Robotics student at Carnegie Mellon University.
+tagline: Research Engineer at Meta Reality Labs
+description: Personal website of Neham Jain, Research Engineer at Meta Reality Labs, specializing in 3D Vision, Deep Learning, and Robotics.
 
-# TIP ── For local development you can comment out `url`
-# and build with relative paths. In production you want this set.
 url: https://nehamjain10.github.io
 
 # --------------------------------------------------
@@ -14,65 +12,48 @@ url: https://nehamjain10.github.io
 # --------------------------------------------------
 owner:
   name: Neham Jain
-  # avatar: hanlin.jpg # TODO: Update with user's avatar if available, otherwise comment out
-  bio: Master of Science in Robotics student at CMU.
+  avatar: neham.jpg
   email: nehamjain2002@gmail.com
-  # cv: 
 
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  # twitter: 
+  # Social networking links
   github: nehamjain10
   linkedin: neham-jain
-  # scholar: 
-  # researchgate: 
-  # zhihu: 
-  # xiaohongshu: 
-  # instagram: 
-  # bilibili: 
-  # facebook: 
-  # lastfm: 
-  # tumblr: 
+  scholar: https://scholar.google.com/citations?user=YOUR_ID
 
 
 # --------------------------------------------------
 #  SEARCH-ENGINE VERIFICATION & ANALYTICS
 # --------------------------------------------------
 # google_verify: ""
-# bing_verify: ""    # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-# google_analytics: ""                                 # GA-4 property ID
+# google_analytics: ""
 
 
 # --------------------------------------------------
 #  TOP NAVIGATION BAR
-#  `external: true` opens the link in a new tab.
 # --------------------------------------------------
 links:
   - title: About Me
     url: /
   - title: Experience
     url: /experience/
-  - title: Publications
-    url: /publications/
   - title: Projects
     url: /projects/
-  # - title: Blogs
-  #   url: /blogs/
+  - title: Publications
+    url: /publications/
 
 
 # --------------------------------------------------
 #  BUILD & RENDERING OPTIONS
 # --------------------------------------------------
 timezone: America/New_York
-future: true                     # Render posts dated in the future
-highlighter: rouge               # Code highlighter; Rouge is default in MM
-# markdown: kramdown             # Jekyll default; uncomment to force
-# pygments: true                 # Legacy option (Rouge supersedes this)
+future: true
+highlighter: rouge
 
 
 # --------------------------------------------------
 #  PERMALINK STRUCTURE
 # --------------------------------------------------
-permalink: /:categories/:title    # e.g. /tech/my-post/
+permalink: /:categories/:title
 
 
 # --------------------------------------------------
@@ -85,29 +66,12 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-  # coderay:
-  #   coderay_line_numbers:
-  #   coderay_line_numbers_start: 1
-  #   coderay_tab_width: 4
-  #   coderay_bold_every: 10
-  #   coderay_css: class
-
-
-# --------------------------------------------------
-#  DISQUS COMMENT SYSTEM
-# --------------------------------------------------
-disqus:
-#   shortname: 
-
-
-# include: [".htaccess"]
-# exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
 
 # --------------------------------------------------
 #  INCLUDE / EXCLUDE Lists
 # --------------------------------------------------
-include: [".htaccess"]           # Files to force-include in the build
-exclude:                         # Folders/files ignored during build
+include: [".htaccess"]
+exclude:
   - "lib"
   - "config.rb"
   - "Capfile"
@@ -117,19 +81,14 @@ exclude:                         # Folders/files ignored during build
   - "Rakefile.rb"
   - "tmp"
   - "less"
-  - "minimal-mistakes.sublime-project"
-  - "minimal-mistakes.sublime-workspace"
+  - "GuangLun2000.github.io"
   - "neham_cv.tex"
 
 
 # --------------------------------------------------
-#  OPTIONAL PLUG-INS (uncomment once gems are added)
+#  PLUG-INS
 # --------------------------------------------------
 plugins:
-  - jekyll-feed          # Auto-generate RSS feed
-  - jekyll-sitemap       # Auto-generate sitemap.xml
-  - jekyll-seo-tag       # Adds SEO meta tags & JSON-LD
-#   - jekyll-picture-tag   # Responsive images & WebP/AVIF
-  # - jekyll-archives      # Year/month archive pages
-
-
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
