@@ -27,7 +27,7 @@ I am always open to academic and engineering discussions and potential collabora
 - **Winter 2025**: [SmokeSeer](https://imaging.cs.cmu.edu/smokeseer/) accepted as a poster at 3DV 2026!
 - **Fall 2025**: [Embody3D](https://www.meta.com/emerging-tech/codec-avatars/embody-3d/) a large-scale multimodal motion and behavior dataset released!
 - **June 2025**: Started as Research Engineer at Meta Reality Labs!
-- **May 2025**: Graduated with MS in Robotics from CMU! Thesis awarded high distinction.
+- **May 2025**: Graduated with MS in Robotics from CMU! 
 - **Summer 2024**: Research internship at Adobe Research, San Francisco — built scalable 3D foundation model pipeline
 - **Spring 2024**: Paper accepted at WWW 2024 — *Counterfactual Explanations for Visual Recommender Systems*
 
