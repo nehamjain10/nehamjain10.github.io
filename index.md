@@ -24,7 +24,7 @@ I am always open to academic and engineering discussions and potential collabora
 
 ## News and Updates
 
-- **Winter 2025**: [SmokeSeer](https://imaging.cs.cmu.edu/smokeseer/) accepted as a poster at 3DV 2026!
+- **Winter 2025**: [SmokeSeer](https://imaging.cs.cmu.edu/smokeseer/) accepted as a poster at 3DV 2026! [[Supplementary Results]](/smokeseer_supplementary/)
 - **Fall 2025**: [Embody3D](https://www.meta.com/emerging-tech/codec-avatars/embody-3d/) a large-scale multimodal motion and behavior dataset released!
 - **June 2025**: Started as Research Engineer at Meta Reality Labs!
 - **May 2025**: Graduated with MS in Robotics from CMU! 
