@@ -25,21 +25,29 @@
 </head>
 
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body class="mesh-site mesh-page page" itemscope itemtype="http://schema.org/WebPage">
 
 {% include chrome-frame.html %}
 
 {% include navigation.html %}
 
+<header class="page-field" aria-label="{{ page.title }} page header">
+  <canvas class="mesh-canvas" data-mesh-scene="page" aria-hidden="true"></canvas>
+  <div class="page-field__inner">
+    <p class="mesh-kicker">research archive / systems log</p>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+  </div>
+</header>
+
 {% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+  <img src="{{ '/images/' | append: page.image.feature | relative_url }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
 </div><!-- /.image-wrap -->{% endif %}
 
-<div id="main" role="main"  itemprop="mainContentOfPage">
-  <div class="article-author-top">
+<div id="main" class="mesh-main mesh-page-main" role="main" itemprop="mainContentOfPage">
+  <aside class="article-author-top mesh-author-rail">
     {% include author-bio.html %}
-  </div>
-  <article itemscope itemtype="http://schema.org/CreativeWork">
+  </aside>
+  <article class="mesh-content" itemscope itemtype="http://schema.org/CreativeWork">
   {% comment %}
     <div class="headline-wrap">
       <h1 itemprop="headline">{{ page.title }}</h1>

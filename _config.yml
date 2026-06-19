@@ -2,8 +2,8 @@
 #  BASIC SITE INFO
 # --------------------------------------------------
 title: Neham Jain
-tagline: Research Engineer at Meta Reality Labs
-description: Personal website of Neham Jain, Research Engineer at Meta Reality Labs, specializing in 3D Vision, Deep Learning, and Robotics.
+tagline: Researcher at Meshy.ai
+description: Personal website of Neham Jain, a researcher specializing in 3D foundation models, neural rendering, data systems, and robotic perception.
 
 url: https://nehamjain10.github.io
 
@@ -14,6 +14,7 @@ owner:
   name: Neham Jain
   avatar: neham.jpg
   email: nehamjain2002@gmail.com
+  bio: Researcher working on 3D foundation models, neural rendering, scalable data systems, and robotic perception.
 
   # Social networking links
   github: nehamjain10

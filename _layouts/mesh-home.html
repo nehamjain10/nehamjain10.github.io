@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+{% include head.html %}
+
+<script src="https://cdn.counter.dev/script.js" data-id="4c8f7caa-2b55-46cd-a995-2c4633303773" data-utcoffset="8"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5N5JY1E21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T5N5JY1E21');
+</script>
+</head>
+
+<body class="mesh-site mesh-home home" itemscope itemtype="http://schema.org/WebPage">
+
+{% include chrome-frame.html %}
+
+<section class="mesh-stage" aria-label="Neham Jain 3D research homepage">
+  <canvas class="mesh-canvas" data-mesh-scene="home" aria-hidden="true"></canvas>
+  <div class="mesh-stage__grain" aria-hidden="true"></div>
+
+  {% include navigation.html %}
+
+  <div class="home-hero">
+    <div class="home-hero__copy">
+      <p class="mesh-kicker">3D vision · neural rendering · data systems</p>
+      <h1 itemprop="headline">Neham Jain</h1>
+      <p class="home-hero__summary">Researcher working on 3D foundation models, reconstruction systems, and the data infrastructure that makes geometric learning practical at scale.</p>
+      <div class="home-hero__links" aria-label="Primary links">
+        <a href="mailto:{{ site.owner.email }}" class="mesh-link">Email</a>
+        <a href="https://github.com/{{ site.owner.github }}" class="mesh-link">GitHub</a>
+        <a href="{{ site.owner.scholar }}" class="mesh-link">Scholar</a>
+      </div>
+    </div>
+
+    <aside class="hero-console" aria-label="Profile summary">
+      <img src="{{ '/images/' | append: site.owner.avatar | relative_url }}" class="hero-console__photo" alt="{{ site.owner.name }} profile photo" width="112" height="112">
+      <p class="hero-console__eyebrow">Current</p>
+      <p class="hero-console__title">Researcher at Meshy.ai</p>
+      <p class="hero-console__body">3D data, neural rendering, multimodal curation, and training pipelines for foundation models.</p>
+    </aside>
+  </div>
+</section>
+
+<main id="main" class="mesh-main home-main" itemprop="mainContentOfPage">
+  <section class="mesh-signal-strip" aria-label="Research focus areas">
+    <div class="mesh-signal">
+      <span>01</span>
+      <strong>Scene Reconstruction</strong>
+      <p>Smoke-free 3D Gaussian splatting for difficult real-world scenes.</p>
+    </div>
+    <div class="mesh-signal">
+      <span>02</span>
+      <strong>Data Engines</strong>
+      <p>Scalable curation, QA, and training pipelines for multimodal models.</p>
+    </div>
+    <div class="mesh-signal">
+      <span>03</span>
+      <strong>Robotic Perception</strong>
+      <p>Geometry, sensing, and learning systems that survive contact with reality.</p>
+    </div>
+  </section>
+
+  <article class="mesh-content" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="article-wrap mesh-prose" itemprop="text">
+      {{ content }}
+    </div>
+  </article>
+</main>
+
+<div class="footer-wrap">
+  <footer>
+    {% include footer.html %}
+  </footer>
+</div>
+
+{% include scripts.html %}
+
+</body>
+</html>
