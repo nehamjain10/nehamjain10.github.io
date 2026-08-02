@@ -24,6 +24,11 @@
 {% include chrome-frame.html %}
 
 <section class="mesh-stage" aria-label="Neham Jain research homepage">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg__grid"></div>
+    <div class="hero-bg__glow"></div>
+  </div>
+
   {% include navigation.html %}
 
   <div class="home-hero">
@@ -33,7 +38,9 @@
       <p class="home-hero__summary">I work on generative models, visual computing, and the training, evaluation, and data systems behind them.</p>
       <div class="home-hero__links" aria-label="Primary links">
         <a href="mailto:{{ site.owner.email }}" class="mesh-link mesh-link--primary">Get in touch</a>
-        <a href="{{ site.owner.scholar }}" class="mesh-link">Google Scholar</a>
+        <a href="{{ site.owner.scholar }}" class="mesh-link">Scholar</a>
+        <a href="https://github.com/{{ site.owner.github }}" class="mesh-link">GitHub</a>
+        <a href="https://linkedin.com/in/{{ site.owner.linkedin }}" class="mesh-link">LinkedIn</a>
       </div>
     </div>
 
@@ -57,7 +64,7 @@
       </div>
       <div class="hero-console__caption">
         <p class="hero-console__eyebrow">Currently</p>
-        <p class="hero-console__body">Researcher at Meshy.ai</p>
+        <p class="hero-console__body"><span class="status-dot" aria-hidden="true"></span>Researcher at Meshy.ai</p>
         <p class="hero-console__note">Drag to inspect</p>
       </div>
     </aside>

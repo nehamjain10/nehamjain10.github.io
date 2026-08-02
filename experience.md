@@ -6,82 +6,93 @@ title: Experience
 
 # Professional Experience
 
----
+<div class="xp">
+  <div class="xp-head">
+    <h2>Meshy.ai</h2>
+    <span class="xp-meta">Mar 2026 – Present</span>
+  </div>
+  <p class="xp-role">Researcher · Generative Modeling &amp; ML Systems</p>
+  <ul>
+    <li>Research generative models for visual media, spanning multimodal conditioning, training, evaluation, and inference.</li>
+    <li>Build reliable experimentation and evaluation infrastructure for large-scale generative systems.</li>
+    <li>Work across research and engineering to turn modeling ideas into reproducible, scalable pipelines.</li>
+  </ul>
+</div>
 
-## Meshy.ai
-**Researcher** | March 2026 - Present
+<div class="xp">
+  <div class="xp-head">
+    <h2>Meta Reality Labs</h2>
+    <span class="xp-meta">Pittsburgh, PA · Jun 2025 – Feb 2026</span>
+  </div>
+  <p class="xp-role">Research Engineer · Data Pipelines for Training Embodied AI Agents</p>
+  <ul>
+    <li><strong><a href="https://arxiv.org/pdf/2510.16258">Embody3D</a> dataset release</strong>: Built QA tools, coordinated annotation of <strong>1.6M videos</strong>, and curated <strong>500 hours</strong> of high-quality data — <strong>187 GitHub stars</strong>, <strong>3 citations</strong>, adopted by internal teams for training.</li>
+    <li>Built <strong>automated quality filtering</strong> algorithms to eliminate annotation bottlenecks and ensure high-quality data for training.</li>
+    <li>Achieved <strong>75% reduction</strong> in tracking error rate by designing a <strong>self-supervised data generation</strong> pipeline to train keypoint model.</li>
+  </ul>
+</div>
 
-*Generative Modeling & ML Systems*
+<div class="xp">
+  <div class="xp-head">
+    <h2>Adobe Research</h2>
+    <span class="xp-meta">San Francisco, CA · Summer 2024</span>
+  </div>
+  <p class="xp-role">Research Engineer Intern · Scalable Pipeline for Training 3D Foundation Models</p>
+  <ul>
+    <li>Created a <strong>pipeline</strong> to convert <strong>synthetic mesh assets</strong> into <strong>relightable Gaussian Splats</strong> for training <strong>3D Foundation Models</strong>.</li>
+    <li>Wrote <strong>custom CUDA kernels</strong> to replace <strong>spherical harmonics</strong> with <strong>neural features</strong> for <strong>relightability</strong> and <strong>faster training</strong>.</li>
+    <li>Scaled the training <strong>pipeline</strong> to 32 nodes and <strong>improved training time</strong> from <strong>6 minutes</strong> per asset to <strong>30 seconds</strong>.</li>
+  </ul>
+</div>
 
-- Research generative models for visual media, spanning multimodal conditioning, training, evaluation, and inference.
-- Build reliable experimentation and evaluation infrastructure for large-scale generative systems.
-- Work across research and engineering to turn modeling ideas into reproducible, scalable pipelines.
+<div class="xp">
+  <div class="xp-head">
+    <h2>Adobe Research</h2>
+    <span class="xp-meta">Bangalore, India · Summer 2022</span>
+  </div>
+  <p class="xp-role">Research Scientist Intern · Counterfactual Explanations of Visual Recommender Systems <a href="https://dl.acm.org/doi/10.1145/3589335.3651484">[Paper]</a></p>
+  <ul>
+    <li>Worked on <strong>counterfactual explanations</strong> for <strong>recommendation systems</strong> based on <strong>vision language models</strong>.</li>
+    <li>Computed the <strong>minimal meaningful perturbation</strong> to an item's <strong>image-embedding</strong> that would remove it from a user's recommended list. Used <strong>CLIP</strong> to connect <strong>image features</strong> to <strong>textual labels</strong> to lend meaning to the <strong>perturbations</strong>.</li>
+    <li>Work was accepted at <strong>WWW 2024</strong> and a <strong>patent</strong> has been filed at <strong>USPTO</strong>.</li>
+  </ul>
+</div>
 
----
-
-## Meta Reality Labs
-**Research Engineer** | Pittsburgh, PA | June 2025 - February 2026
-
-*Data Pipelines for Training Embodied AI Agents*
-
-- **[Embody3D](https://arxiv.org/pdf/2510.16258) dataset release**: Built QA tools, coordinated annotation of **1.6M videos**, and curated **500 hours** of high-quality data — **187 GitHub stars**, **3 citations**, adopted by internal teams for training.
-- Built **automated quality filtering** algorithms to eliminate annotation bottlenecks and ensure high-quality data for training.
-- Achieved **75% reduction** in tracking error rate by designing a **self-supervised data generation** pipeline to train keypoint model.
-
----
-
-## Adobe Research
-**Research Engineer Intern** | San Francisco, CA | Summer 2024
-
-*Scalable Pipeline for Training 3D Foundation Models*
-
-- Created a **pipeline** to convert **synthetic mesh assets** into **relightable Gaussian Splats** for training **3D Foundation Models**.
-- Wrote **custom CUDA kernels** to replace **spherical harmonics** with **neural features** for **relightability** and **faster training**.
-- Scaled the training **pipeline** to 32 nodes and **improved training time** from **6 minutes** per asset to **30 seconds**.
-
----
-
-## Adobe Research
-**Research Scientist Intern** | Bangalore, India | Summer 2022
-
-*Counterfactual Explanations of Visual Recommender Systems* [[Paper]](https://dl.acm.org/doi/10.1145/3589335.3651484)
-
-- Worked on **counterfactual explanations** for **recommendation systems** based on **vision language models**.
-- Computed the **minimal meaningful perturbation** to an item's **image-embedding** that would remove it from a user's recommended list. Used **CLIP** to connect **image features** to **textual labels** to lend meaning to the **perturbations**.
-- Work was accepted at **WWW 2024** and a **patent** has been filed at **USPTO**.
-
----
-
-## Subex AI Labs
-**Machine Learning Intern** | Bangalore, India | Summer 2021
-
-*Information Extraction from Unstructured Invoices*
-
-- Developed an end-to-end pipeline for **multilingual invoice understanding** and **table extraction** using object detection.
-- Fine-tuned a **multimodal document transformer** model (**LayoutLMv2**) to extract form fields using **token classification**.
-
----
-
-<br>
+<div class="xp">
+  <div class="xp-head">
+    <h2>Subex AI Labs</h2>
+    <span class="xp-meta">Bangalore, India · Summer 2021</span>
+  </div>
+  <p class="xp-role">Machine Learning Intern · Information Extraction from Unstructured Invoices</p>
+  <ul>
+    <li>Developed an end-to-end pipeline for <strong>multilingual invoice understanding</strong> and <strong>table extraction</strong> using object detection.</li>
+    <li>Fine-tuned a <strong>multimodal document transformer</strong> model (<strong>LayoutLMv2</strong>) to extract form fields using <strong>token classification</strong>.</li>
+  </ul>
+</div>
 
 # Education
 
----
+<div class="xp">
+  <div class="xp-head">
+    <h2>Carnegie Mellon University</h2>
+    <span class="xp-meta">May 2025</span>
+  </div>
+  <p class="xp-role">Master of Science in Robotics</p>
+  <ul>
+    <li><strong>Advisor</strong>: Prof. Ioannis Gkioulekas</li>
+    <li><strong>GPA</strong>: 4.11/4.0</li>
+    <li><strong>Relevant Coursework</strong>: Deep Learning Systems, Learning for 3D Vision, Robot Learning, Physics-based Rendering</li>
+  </ul>
+</div>
 
-## Carnegie Mellon University
-**Master of Science in Robotics** | May 2025
-
-- **Advisor**: Prof. Ioannis Gkioulekas
-- **GPA**: 4.11/4.0
-- **Relevant Coursework**: Deep Learning Systems, Learning for 3D Vision, Robot Learning, Physics-based Rendering
-
----
-
-## Indian Institute of Technology (IIT) Madras
-**Bachelor of Technology in Electrical Engineering** | June 2023
-
-- **CGPA**: 9.24/10
-- **Minor**: Machine Learning
-- **Relevant Coursework**: Modern Computer Vision, Machine Learning, Computational Photography
-
-<br>
+<div class="xp">
+  <div class="xp-head">
+    <h2>Indian Institute of Technology (IIT) Madras</h2>
+    <span class="xp-meta">June 2023</span>
+  </div>
+  <p class="xp-role">Bachelor of Technology in Electrical Engineering · Minor in Machine Learning</p>
+  <ul>
+    <li><strong>CGPA</strong>: 9.24/10</li>
+    <li><strong>Relevant Coursework</strong>: Modern Computer Vision, Machine Learning, Computational Photography</li>
+  </ul>
+</div>
