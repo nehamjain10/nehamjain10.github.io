@@ -4,15 +4,6 @@
 
 <script>
   (function () {
-    var toggle = document.querySelector('.theme-toggle');
-    if (toggle) {
-      toggle.addEventListener('click', function () {
-        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-      });
-    }
-
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
 
     var targets = document.querySelectorAll(

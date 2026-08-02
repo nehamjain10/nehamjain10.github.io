@@ -24,26 +24,6 @@
   color-scheme: light;
 }
 
-:root[data-theme="dark"] {
-  --bg: #0a0a10;
-  --paper: #10101a;
-  --text: #f2f2f7;
-  --muted: #a3a3b2;
-  --faint: #6d6d7c;
-  --line: #232330;
-  --accent: #818cf8;
-  --accent-2: #22d3ee;
-  --grad: linear-gradient(100deg, #818cf8 0%, #22d3ee 100%);
-  --grid-line: rgba(242, 242, 247, 0.045);
-  --glow-a: rgba(99, 102, 241, 0.16);
-  --glow-b: rgba(34, 211, 238, 0.10);
-  --model-bg: #0a0a10;
-  --code-bg: #1a1a26;
-  --selection: #31316b;
-  --shadow-card: 0 16px 44px -18px rgba(99, 102, 241, 0.5);
-  color-scheme: dark;
-}
-
 * { box-sizing: border-box; }
 html { background: var(--bg); scroll-behavior: smooth; }
 
@@ -194,27 +174,6 @@ body.mesh-site {
 }
 
 .top-navigation-current::after { right: 0 !important; }
-
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-}
-
-.theme-toggle:hover { border-color: var(--accent); color: var(--accent); transform: rotate(15deg); }
-.theme-toggle svg { width: 15px; height: 15px; }
-.theme-toggle .icon-moon { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
 /* ------------------------------------------------- */
 /*  Home hero                                         */
