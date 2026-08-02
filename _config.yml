@@ -2,8 +2,8 @@
 #  BASIC SITE INFO
 # --------------------------------------------------
 title: Neham Jain
-tagline: Researcher at Meshy.ai
-description: Personal website of Neham Jain, a researcher specializing in 3D foundation models, neural rendering, data systems, and robotic perception.
+tagline: Generative Models, Visual Computing & ML Systems
+description: Personal website of Neham Jain, a researcher working on generative modeling, visual computing, and scalable ML systems.
 
 url: https://nehamjain10.github.io
 
@@ -14,7 +14,7 @@ owner:
   name: Neham Jain
   avatar: neham.jpg
   email: nehamjain2002@gmail.com
-  bio: Researcher working on 3D foundation models, neural rendering, scalable data systems, and robotic perception.
+  bio: Researcher working on generative modeling, visual computing, and scalable ML systems.
 
   # Social networking links
   github: nehamjain10
@@ -33,7 +33,7 @@ owner:
 #  TOP NAVIGATION BAR
 # --------------------------------------------------
 links:
-  - title: About Me
+  - title: About
     url: /
   - title: Experience
     url: /experience/

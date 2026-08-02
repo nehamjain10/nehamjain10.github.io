@@ -5,7 +5,9 @@ title: Neham Jain
 
 # About Me
 
-Hi, my name is Neham, I am currently a Researcher at [Meshy.ai](https://www.meshy.ai/), where I am working on 3D foundation models and data. Previously, I was a Research Engineer at [Meta Reality Labs](https://about.meta.com/realitylabs/), building large scale multi-modal data pipelines and data curation for training foundation models. I graduated with a **Master of Science in Robotics** from [Carnegie Mellon University](https://www.ri.cmu.edu/) in May 2025, where I was fortunate to be advised by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) and collaborate with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/). My thesis was titled [*"SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction"*](https://www.ri.cmu.edu/app/uploads/2025/05/Neham_MSR_Thesis_Finally.pdf).
+Hi, my name is Neham. I am currently a Researcher at [Meshy.ai](https://www.meshy.ai/), where I work on **generative models, multimodal learning, and the systems needed to train and evaluate them at scale**. Previously, I was a Research Engineer at [Meta Reality Labs](https://about.meta.com/realitylabs/), building data pipelines and data curation systems for training virtual human-based AI agents.
+
+I graduated with a **Master of Science in Robotics** from [Carnegie Mellon University](https://www.ri.cmu.edu/) in May 2025, where I was fortunate to be advised by [Prof. Ioannis Gkioulekas](https://www.cs.cmu.edu/~igkioule/) and collaborate with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/). My thesis, [*"SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction"*](https://www.ri.cmu.edu/app/uploads/2025/05/Neham_MSR_Thesis_Finally.pdf), focused on smoke removal and scene reconstruction using 3D Gaussian Splatting.
 
 Prior to CMU, I earned my **Bachelor of Technology in Electrical Engineering** from [IIT Madras](https://www.iitm.ac.in/) with a Minor in Machine Learning.
 
@@ -15,11 +17,11 @@ I am always open to academic and engineering discussions and potential collabora
 
 ## Research and Engineering Interests
 
-- 3D Computer Vision & Neural Rendering
-- Scalable Data Pipelines & Curation
-- Robotic Perception
+- Generative Modeling & Representation Learning
 - Multimodal Learning
-- Deep Learning Systems & CUDA Optimization
+- Scalable Training, Evaluation & Data Systems
+- Vision, Geometry & 3D/4D Generation
+- Efficient Deep Learning Systems
 
 ---
 

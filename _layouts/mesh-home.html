@@ -23,52 +23,48 @@
 
 {% include chrome-frame.html %}
 
-<section class="mesh-stage" aria-label="Neham Jain 3D research homepage">
-  <canvas class="mesh-canvas" data-mesh-scene="home" aria-hidden="true"></canvas>
-  <div class="mesh-stage__grain" aria-hidden="true"></div>
-
+<section class="mesh-stage" aria-label="Neham Jain research homepage">
   {% include navigation.html %}
 
   <div class="home-hero">
     <div class="home-hero__copy">
-      <p class="mesh-kicker">3D vision · neural rendering · data systems</p>
+      <p class="mesh-kicker">Generative models / Visual computing / ML systems</p>
       <h1 itemprop="headline">Neham Jain</h1>
-      <p class="home-hero__summary">Researcher working on 3D foundation models, reconstruction systems, and the data infrastructure that makes geometric learning practical at scale.</p>
+      <p class="home-hero__summary">I work on generative models, visual computing, and the training, evaluation, and data systems behind them.</p>
       <div class="home-hero__links" aria-label="Primary links">
-        <a href="mailto:{{ site.owner.email }}" class="mesh-link">Email</a>
-        <a href="https://github.com/{{ site.owner.github }}" class="mesh-link">GitHub</a>
-        <a href="{{ site.owner.scholar }}" class="mesh-link">Scholar</a>
+        <a href="mailto:{{ site.owner.email }}" class="mesh-link mesh-link--primary">Get in touch</a>
+        <a href="{{ site.owner.scholar }}" class="mesh-link">Google Scholar</a>
       </div>
     </div>
 
     <aside class="hero-console" aria-label="Profile summary">
-      <img src="{{ '/images/' | append: site.owner.avatar | relative_url }}" class="hero-console__photo" alt="{{ site.owner.name }} profile photo" width="112" height="112">
-      <p class="hero-console__eyebrow">Current</p>
-      <p class="hero-console__title">Researcher at Meshy.ai</p>
-      <p class="hero-console__body">3D data, neural rendering, multimodal curation, and training pipelines for foundation models.</p>
+      <div class="hero-console__image-wrap">
+        <model-viewer
+          class="hero-console__model"
+          src="{{ '/assets/models/neham-avatar.glb' | relative_url }}?v=3"
+          poster="{{ '/images/' | append: site.owner.avatar | relative_url }}"
+          alt="Interactive 3D portrait of {{ site.owner.name }}"
+          camera-controls
+          camera-orbit="-8deg 78deg 3.25m"
+          camera-target="0m 0.05m 0m"
+          interaction-prompt="none"
+          shadow-intensity="0"
+          exposure="1"
+          field-of-view="28deg"
+          loading="eager">
+        </model-viewer>
+        <noscript><img src="{{ '/images/' | append: site.owner.avatar | relative_url }}" class="hero-console__photo" alt="{{ site.owner.name }} profile photo" width="280" height="320"></noscript>
+      </div>
+      <div class="hero-console__caption">
+        <p class="hero-console__eyebrow">Currently</p>
+        <p class="hero-console__body">Researcher at Meshy.ai</p>
+        <p class="hero-console__note">Drag to inspect</p>
+      </div>
     </aside>
   </div>
 </section>
 
 <main id="main" class="mesh-main home-main" itemprop="mainContentOfPage">
-  <section class="mesh-signal-strip" aria-label="Research focus areas">
-    <div class="mesh-signal">
-      <span>01</span>
-      <strong>Scene Reconstruction</strong>
-      <p>Smoke-free 3D Gaussian splatting for difficult real-world scenes.</p>
-    </div>
-    <div class="mesh-signal">
-      <span>02</span>
-      <strong>Data Engines</strong>
-      <p>Scalable curation, QA, and training pipelines for multimodal models.</p>
-    </div>
-    <div class="mesh-signal">
-      <span>03</span>
-      <strong>Robotic Perception</strong>
-      <p>Geometry, sensing, and learning systems that survive contact with reality.</p>
-    </div>
-  </section>
-
   <article class="mesh-content" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="article-wrap mesh-prose" itemprop="text">
       {{ content }}

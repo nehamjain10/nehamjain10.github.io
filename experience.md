@@ -8,8 +8,19 @@ title: Experience
 
 ---
 
+## Meshy.ai
+**Researcher** | March 2026 - Present
+
+*Generative Modeling & ML Systems*
+
+- Research generative models for visual media, spanning multimodal conditioning, training, evaluation, and inference.
+- Build reliable experimentation and evaluation infrastructure for large-scale generative systems.
+- Work across research and engineering to turn modeling ideas into reproducible, scalable pipelines.
+
+---
+
 ## Meta Reality Labs
-**Research Engineer** | Pittsburgh, PA | June 2025 - Present
+**Research Engineer** | Pittsburgh, PA | June 2025 - February 2026
 
 *Data Pipelines for Training Embodied AI Agents*
 
