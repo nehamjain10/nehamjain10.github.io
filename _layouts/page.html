@@ -33,25 +33,13 @@
 
 <header class="page-field" aria-label="{{ page.title }} page header">
   <div class="page-field__inner">
-    <p class="mesh-kicker">Neham Jain / Portfolio</p>
     <h1 itemprop="headline">{{ page.title }}</h1>
+    {% if page.description %}<p class="page-field__lede">{{ page.description }}</p>{% endif %}
   </div>
 </header>
 
-{% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ '/images/' | append: page.image.feature | relative_url }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
-</div><!-- /.image-wrap -->{% endif %}
-
 <div id="main" class="mesh-main mesh-page-main" role="main" itemprop="mainContentOfPage">
-  <aside class="article-author-top mesh-author-rail">
-    {% include author-bio.html %}
-  </aside>
   <article class="mesh-content" itemscope itemtype="http://schema.org/CreativeWork">
-  {% comment %}
-    <div class="headline-wrap">
-      <h1 itemprop="headline">{{ page.title }}</h1>
-    </div><!--/ .headline-wrap -->
-  {% endcomment %}
     <div class="article-wrap" itemprop="text">
       {{ content }}
     </div><!-- /.article-wrap -->

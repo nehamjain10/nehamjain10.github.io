@@ -2,56 +2,53 @@
 layout: page
 permalink: /projects/index.html
 title: Projects
+description: Research and systems projects.
 ---
-
-# Research Projects
 
 <div class="xp">
   <div class="xp-head">
     <h2>SmokeSeer</h2>
-    <span class="xp-meta">Pittsburgh, PA · Fall 2023 – 2025</span>
+    <span class="xp-meta">CMU · 2023 – 2025</span>
   </div>
-  <p class="xp-role">Masters Thesis · 3D Gaussian Splatting for Reconstruction of Wildfire Scenes · <a href="https://imaging.cs.cmu.edu/smokeseer/">[Project Page]</a> · 3DV 2026 Poster</p>
+  <p class="xp-role">MS Thesis · 3D Gaussian splatting for wildfire scenes · <a href="https://imaging.cs.cmu.edu/smokeseer/">Project page</a> · 3DV 2026</p>
   <ul>
-    <li>Decomposed <strong>wildfire scenes</strong> into <strong>smoke and surface Gaussians</strong> for <strong>smoke-free rendering</strong> to assist firefighting.</li>
-    <li>Integrated <strong>fluid particle hydrodynamics</strong> into the <strong>3D Gaussian Splatting</strong> pipeline to accurately model the <strong>temporal dependence of smoke</strong>, resulting in more <strong>realistic</strong> and <strong>artifact-free</strong> reconstructions.</li>
-    <li>Adapted <strong>Mast3r-SfM</strong> to perform <strong>localization</strong> of the <strong>RGB</strong> and <strong>thermal</strong> cameras in the same coordinate frame.</li>
+    <li>Decomposes wildfire scenes into smoke and surface Gaussians, rendering smoke-free views to assist firefighting.</li>
+    <li>Integrates fluid particle hydrodynamics into the splatting pipeline to model the temporal behavior of smoke.</li>
+    <li>Adapts Mast3r-SfM to localize RGB and thermal cameras in a shared coordinate frame.</li>
   </ul>
 </div>
 
 <div class="xp">
   <div class="xp-head">
     <h2>Needle: Deep Learning Framework</h2>
-    <span class="xp-meta">Pittsburgh, PA · Fall 2024</span>
+    <span class="xp-meta">CMU · Fall 2024</span>
   </div>
-  <p class="xp-role">Course Project, Deep Learning Systems · <a href="https://colab.research.google.com/drive/13xndhmKBW1cjgtueA5-biCThGCdB6waA?usp=sharing">[Report]</a></p>
+  <p class="xp-role">Deep Learning Systems course · <a href="https://colab.research.google.com/drive/13xndhmKBW1cjgtueA5-biCThGCdB6waA?usp=sharing">Report</a></p>
   <ul>
-    <li>Created a general purpose <strong>library</strong> for <strong>differentiable programming</strong> from scratch with support for <strong>C</strong> and <strong>CUDA</strong> backends.</li>
-    <li>Implemented features such as <strong>gradient accumulation</strong> and <strong>distributed training (NCCL)</strong> for training larger models.</li>
-    <li>Trained <strong>Llama-3</strong> architecture across <strong>8 4090s</strong> nodes on <strong>OpenWebText</strong> using custom <strong>NCCL</strong> and <strong>Gloo</strong> backend.</li>
+    <li>Differentiable-programming library from scratch with C and CUDA backends, gradient accumulation, and NCCL/Gloo distributed training.</li>
+    <li>Trained a Llama-3 architecture on OpenWebText across <strong>8×4090</strong> nodes with the custom backend.</li>
   </ul>
 </div>
 
 <div class="xp">
   <div class="xp-head">
     <h2>Multiview Diffusion Models</h2>
-    <span class="xp-meta">Pittsburgh, PA · Spring 2024</span>
+    <span class="xp-meta">CMU · Spring 2024</span>
   </div>
-  <p class="xp-role">Course Project, Learning for 3D Vision · Multiview Diffusion Models for Image-to-Image Translation</p>
+  <p class="xp-role">Learning for 3D Vision course · Multiview image-to-image translation</p>
   <ul>
-    <li>Developed a <strong>multiview-aware diffusion model</strong> for translating between domains, such as day-to-night.</li>
-    <li>Designed a <strong>conditional U-Net architecture</strong> with multiview feature aggregation using <strong>epipolar constraints</strong>.</li>
+    <li>Multiview-aware diffusion model for domain translation (e.g. day-to-night) with a conditional U-Net aggregating features along epipolar constraints.</li>
   </ul>
 </div>
 
 <div class="xp">
   <div class="xp-head">
     <h2>RGB-Thermal Sensor Fusion</h2>
-    <span class="xp-meta">Aug 2022 – May 2023</span>
+    <span class="xp-meta">CMU / IIT Madras · 2022 – 2023</span>
   </div>
-  <p class="xp-role">RGB-Thermal Sensor Fusion for ADAS Applications · Guides: Prof. Aswin Sankaranarayanan (CMU), Prof. Kaushik Mitra (IIT Madras)</p>
+  <p class="xp-role">ADAS research · Advisors: Prof. Aswin Sankaranarayanan, Prof. Kaushik Mitra</p>
   <ul>
-    <li>Proposed a <strong>physics-based approach</strong> to create a <strong>low-light RGB, well-lit RGB</strong> and <strong>thermal image</strong> of the same scene.</li>
-    <li>Implemented a novel <strong>cross-attention architecture</strong> to <strong>super-resolve</strong> thermal images using RGB as a <strong>guide</strong>.</li>
+    <li>Physics-based capture of aligned low-light RGB, well-lit RGB, and thermal images of the same scene.</li>
+    <li>Cross-attention architecture that super-resolves thermal images using RGB guidance.</li>
   </ul>
 </div>
