@@ -31,15 +31,6 @@ title: Neham Jain
     </div>
     <p>Large-scale multimodal motion and behavior dataset. I built the QA tooling, quality-filtering algorithms, and curation pipeline behind the release.</p>
   </a>
-  <a class="stat-card" href="https://colab.research.google.com/drive/13xndhmKBW1cjgtueA5-biCThGCdB6waA?usp=sharing">
-    <span class="work-card__tag">Systems · Deep learning framework</span>
-    <h3>Needle</h3>
-    <div class="stat-card__figures">
-      <span class="stat"><span class="stat__num">C+CUDA</span><span class="stat__label">backends from scratch</span></span>
-      <span class="stat"><span class="stat__num">8×4090</span><span class="stat__label">distributed Llama-3 run</span></span>
-    </div>
-    <p>A differentiable-programming library built from scratch — autograd, custom kernels, and NCCL distributed training used to train a Llama-3 architecture on OpenWebText.</p>
-  </a>
 </div>
 
 ---
