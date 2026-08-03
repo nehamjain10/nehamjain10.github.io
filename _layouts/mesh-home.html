@@ -33,9 +33,9 @@
 
   <div class="home-hero">
     <div class="home-hero__copy">
-      <p class="mesh-kicker">Researcher · Meshy.ai — 3D foundation models</p>
-      <h1 itemprop="headline">Neham Jain</h1>
-      <p class="home-hero__summary">Generative models are bottlenecked by data and evaluation, not just architectures. I build the data engines, training pipelines, and evaluation systems behind 3D foundation models — at <a href="https://www.meshy.ai/">Meshy.ai</a>, previously Meta Reality Labs, Adobe Research, and CMU.</p>
+      <p class="mesh-kicker">3D generative models · data · evaluation</p>
+      <h1 itemprop="headline"><span>Neham</span><span>Jain</span></h1>
+      <p class="home-hero__summary">I build the data and evaluation systems that turn 3D generative models from impressive demos into reliable tools. My work spans data curation, training pipelines, and evaluation — currently at <a href="https://www.meshy.ai/">Meshy.ai</a>; previously at Meta Reality Labs, Adobe Research, and CMU.</p>
       <div class="home-hero__links" aria-label="Primary links">
         <a href="mailto:{{ site.owner.email }}" class="mesh-link mesh-link--primary">Get in touch</a>
         <a href="{{ '/assets/cv/neham_jain_cv.pdf' | relative_url }}" class="mesh-link">CV</a>
@@ -53,6 +53,9 @@
           poster="{{ '/images/' | append: site.owner.avatar | relative_url }}"
           alt="Interactive 3D portrait of {{ site.owner.name }}"
           camera-controls
+          auto-rotate
+          auto-rotate-delay="0"
+          rotation-per-second="7deg"
           camera-orbit="-8deg 78deg 3.25m"
           camera-target="0m 0.05m 0m"
           interaction-prompt="none"
@@ -65,11 +68,32 @@
       </div>
       <div class="hero-console__caption">
         <p class="hero-console__eyebrow">Currently</p>
-        <p class="hero-console__body"><span class="status-dot" aria-hidden="true"></span>Researcher at Meshy.ai</p>
+        <p class="hero-console__body"><span class="status-dot" aria-hidden="true"></span>Research Scientist at Meshy.ai</p>
       </div>
     </aside>
   </div>
 </section>
+
+<script>
+  customElements.whenDefined('model-viewer').then(function () {
+    var portrait = document.querySelector('.hero-console__model');
+    if (!portrait) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      portrait.removeAttribute('auto-rotate');
+      return;
+    }
+
+    window.setTimeout(function () {
+      portrait.removeAttribute('auto-rotate');
+      if (typeof portrait.resetTurntableRotation === 'function') {
+        portrait.resetTurntableRotation(0);
+      }
+      portrait.setAttribute('camera-orbit', '-8deg 78deg 3.25m');
+      if (typeof portrait.jumpCameraToGoal === 'function') portrait.jumpCameraToGoal();
+    }, 5000);
+  });
+</script>
 
 <main id="main" class="mesh-main home-main" itemprop="mainContentOfPage">
   <article class="mesh-content" itemscope itemtype="http://schema.org/CreativeWork">

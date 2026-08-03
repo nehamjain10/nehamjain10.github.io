@@ -1,29 +1,3 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ '/assets/js/vendor/jquery-1.9.1.min.js' | relative_url }}"><\/script>')</script>
 <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
-
-<script>
-  (function () {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
-
-    var targets = document.querySelectorAll(
-      '.mesh-prose > h1, .mesh-prose > h2, .mesh-prose > p, ' +
-      '.article-wrap > h1, .article-wrap > h2, .article-wrap > blockquote, ' +
-      '.news-item, .feature, .stat-card, .work-card, .xp, .pub'
-    );
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-
-    targets.forEach(function (el, i) {
-      el.classList.add('reveal');
-      el.style.transitionDelay = Math.min((i % 8) * 45, 320) + 'ms';
-      observer.observe(el);
-    });
-  })();
-</script>

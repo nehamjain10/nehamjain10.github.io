@@ -3,7 +3,7 @@
 # --------------------------------------------------
 title: Neham Jain
 tagline: Generative Models, Visual Computing & ML Systems
-description: Personal website of Neham Jain, a researcher working on generative modeling, visual computing, and scalable ML systems.
+description: Personal website of Neham Jain, a research scientist working on generative modeling, visual computing, and scalable ML systems.
 
 url: https://nehamjain10.github.io
 
@@ -14,7 +14,7 @@ owner:
   name: Neham Jain
   avatar: neham.jpg
   email: nehamjain2002@gmail.com
-  bio: Researcher working on generative modeling, visual computing, and scalable ML systems.
+  bio: Research scientist working on generative modeling, visual computing, and scalable ML systems.
 
   # Social networking links
   github: nehamjain10

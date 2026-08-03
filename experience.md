@@ -10,7 +10,7 @@ description: Where I've worked and what I shipped.
     <h2>Meshy.ai</h2>
     <span class="xp-meta">Mar 2026 – Present</span>
   </div>
-  <p class="xp-role">Researcher · Generative Modeling &amp; ML Systems</p>
+  <p class="xp-role">Research Scientist · Generative Modeling &amp; ML Systems</p>
   <ul>
     <li>Generative models for visual media: multimodal conditioning, training, evaluation, and inference.</li>
     <li>Experimentation and evaluation infrastructure for large-scale generative systems.</li>
