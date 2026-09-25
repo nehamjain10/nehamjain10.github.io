@@ -1,0 +1,95 @@
+# --------------------------------------------------
+#  BASIC SITE INFO
+# --------------------------------------------------
+title: Neham Jain
+tagline: Generative Models, Visual Computing & ML Systems
+description: Personal website of Neham Jain, a research scientist working on generative modeling, visual computing, and scalable ML systems.
+
+url: https://nehamjain10.github.io
+
+# --------------------------------------------------
+#  AUTHOR / PROFILE DATA
+# --------------------------------------------------
+owner:
+  name: Neham Jain
+  avatar: neham.jpg
+  email: nehamjain2002@gmail.com
+  bio: Research scientist working on generative modeling, visual computing, and scalable ML systems.
+
+  # Social networking links
+  github: nehamjain10
+  linkedin: neham-jain
+  scholar: https://scholar.google.com/citations?user=_fe4HPwAAAAJ
+
+
+# --------------------------------------------------
+#  SEARCH-ENGINE VERIFICATION & ANALYTICS
+# --------------------------------------------------
+# google_verify: ""
+# google_analytics: ""
+
+
+# --------------------------------------------------
+#  TOP NAVIGATION BAR
+# --------------------------------------------------
+links:
+  - title: About
+    url: /
+  - title: Experience
+    url: /experience/
+  - title: Projects
+    url: /projects/
+  - title: Publications
+    url: /publications/
+
+
+# --------------------------------------------------
+#  BUILD & RENDERING OPTIONS
+# --------------------------------------------------
+timezone: America/New_York
+future: true
+highlighter: rouge
+
+
+# --------------------------------------------------
+#  PERMALINK STRUCTURE
+# --------------------------------------------------
+permalink: /:categories/:title
+
+
+# --------------------------------------------------
+#  KRAMDOWN (Markdown engine) SETTINGS
+# --------------------------------------------------
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+
+# --------------------------------------------------
+#  INCLUDE / EXCLUDE Lists
+# --------------------------------------------------
+include: [".htaccess"]
+exclude:
+  - "lib"
+  - "config.rb"
+  - "Capfile"
+  - "config"
+  - "log"
+  - "Rakefile"
+  - "Rakefile.rb"
+  - "tmp"
+  - "less"
+  - "GuangLun2000.github.io"
+  - "neham_cv.tex"
+
+
+# --------------------------------------------------
+#  PLUG-INS
+# --------------------------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

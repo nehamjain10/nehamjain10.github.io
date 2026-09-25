@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<title>{% if page.title and page.title != site.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fbfaf7">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if page.title and page.title != site.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="{{ site.url }}/images/neham-portrait.jpg">
+<meta name="twitter:card" content="summary">
+
+{% capture canonical %}{{ site.url }}{{ page.url | remove:'index.html' }}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=11">
+
+<link rel="icon" href="{{ '/images/neham.jpg' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/images/neham.jpg' | relative_url }}">

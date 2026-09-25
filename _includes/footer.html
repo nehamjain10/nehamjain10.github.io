@@ -1,0 +1,11 @@
+<footer class="foot">
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} <span class="foot__joke">· last trained {{ site.time | date: '%b %Y' }} · loss still going down</span></p>
+  <nav aria-label="Elsewhere">
+    <a href="mailto:{{ site.owner.email }}">Email</a>
+    <a href="{{ site.owner.scholar }}">Scholar</a>
+    <a href="https://github.com/{{ site.owner.github }}">GitHub</a>
+    <a href="https://linkedin.com/in/{{ site.owner.linkedin }}">LinkedIn</a>
+  </nav>
+</footer>
+
+<script defer src="{{ "/assets/js/bunny-cursor.js" | relative_url }}?v=2" data-points="{{ "/assets/models/bunny-points.json" | relative_url }}"></script>

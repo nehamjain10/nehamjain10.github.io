@@ -1,0 +1,8 @@
+{% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
+<header class="nav">
+  <a class="nav__name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <nav aria-label="Primary">
+    {% for link in site.links %}<a href="{{ link.url | relative_url }}"{% if url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>{% endfor %}
+    <a href="{{ '/assets/cv/neham_jain_cv.pdf' | relative_url }}">CV</a>
+  </nav>
+</header>

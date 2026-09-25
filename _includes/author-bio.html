@@ -1,0 +1,16 @@
+<div class="author-card">
+  <img src="{{ '/images/' | append: site.owner.avatar | relative_url }}" class="bio-photo" alt="{{ site.owner.name }} bio photo" width="104" height="104">
+  <p class="author-card__name">{{ site.owner.name }}</p>
+  <p class="author-card__bio">{{ site.owner.bio }}</p>
+
+  <nav class="author-card__links" aria-label="{{ site.owner.name }} profile links">
+    {% if site.owner.email %}<a href="mailto:{{ site.owner.email }}" target="_blank"><i class="icon-mail"></i> Email</a>{% endif %}
+    {% if site.owner.cv %}<a href="{{ site.owner.cv }}">CV</a>{% endif %}
+    {% if site.owner.twitter %}<a href="https://twitter.com/{{ site.owner.twitter }}"><i class="icon-twitter"></i> Twitter</a>{% endif %}
+    {% if site.owner.linkedin %}<a href="https://linkedin.com/in/{{ site.owner.linkedin }}"><i class="icon-linkedin"></i> LinkedIn</a>{% endif %}
+    {% if site.owner.github %}<a href="https://github.com/{{ site.owner.github }}"><i class="icon-github"></i> GitHub</a>{% endif %}
+    {% if site.owner.scholar %}<a href="{{ site.owner.scholar }}"><i class="ai ai-google-scholar-square"></i> Scholar</a>{% endif %}
+  </nav>
+</div>
+
+<!-- Lastly modified by Hanlin CAI in 2023/10/15 -->
