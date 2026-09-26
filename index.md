@@ -1,13 +1,13 @@
 ---
 layout: mesh-home
 title: Neham Jain
-description: "Neham Jain is a research scientist working on large-scale generative models: training, data, and evaluation."
+description: "Neham Jain — Research Scientist at Meshy AI. Selected work in 3D generation, neural rendering, and embodied AI."
 ---
 
 <section class="block">
   <h2>About</h2>
   <div class="about">
-    <p>I train generative models at Meshy, most recently Meshy-7. Before that I built embodied AI data pipelines at Meta Reality Labs, and before that I worked on neural rendering at Adobe Research and CMU. These days most of my time goes into scaling models, data (actually looking at the pixels!), and evaluation.</p>
+    <p>Before Meshy, I built human motion-capture pipelines at Meta Reality Labs and worked on neural rendering at Adobe Research. I earned my MS in Robotics at Carnegie Mellon, where my thesis explored reconstructing scenes through smoke. These days most of my time goes into scaling 3D models and data and, unglamorously, looking at the data. The single best debugging tool I know is scrolling through a thousand random training samples.</p>
     <p>Off the clock I'm cooking something slightly too ambitious (results vary), watching football (the round-ball kind), staying up way too late for F1 qualifying, or planning the next hike. Lowkey always down to debate any of the above.</p>
   </div>
 </section>
@@ -19,7 +19,7 @@ description: "Neham Jain is a research scientist working on large-scale generati
       <span class="work__year">2026</span>
       <div>
         <h3><a href="https://www.meshy.ai/blog/meshy-7-image-to-3d-geometry-alignment">Meshy-7</a></h3>
-        <p>One of the people behind Meshy's latest image-to-3D foundation model. I work on large-scale training, data, and evaluation. <a href="https://www.meshy.ai/">Go try it out!</a></p>
+        <p>I helped build Meshy-7, Meshy's image-to-3D foundation model. <a href="https://www.meshy.ai/">Go try it out!</a></p>
       </div>
     </li>
     <li>
