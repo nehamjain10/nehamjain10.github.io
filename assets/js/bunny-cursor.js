@@ -38,7 +38,27 @@
       const scatter = Math.sin(t * Math.PI) * (1 - t) * 25;
       ctx.clearRect(0, 0, size, size);
       // Exact click hotspot; the cloud follows just below and to the right.
-      ctx.fillStyle = '#c2512f'; ctx.beginPath(); ctx.arc(5, 5, 4.5, 0, Math.PI * 2); ctx.fill();
+      ctx.save();
+      ctx.translate(20, 20);
+      ctx.strokeStyle = ctx.fillStyle = '#c2512f';
+      ctx.lineWidth = 1.6;
+      ctx.lineCap = 'round';
+      // Brackets close around the exact hotspot when a link is targeted.
+      const reach = hover ? 6 : 9;
+      for (const sx of [-1, 1]) for (const sy of [-1, 1]) {
+        ctx.beginPath();
+        ctx.moveTo(sx * reach, sy * (reach - 3));
+        ctx.lineTo(sx * reach, sy * reach);
+        ctx.lineTo(sx * (reach - 3), sy * reach);
+        ctx.stroke();
+      }
+      ctx.beginPath(); ctx.arc(0, 0, hover ? 2.5 : 1.8, 0, Math.PI * 2); ctx.fill();
+      const pulse = (now - burst) / 450;
+      if (pulse >= 0 && pulse < 1) {
+        ctx.globalAlpha = 1 - pulse;
+        ctx.beginPath(); ctx.arc(0, 0, 4 + pulse * 14, 0, Math.PI * 2); ctx.stroke();
+      }
+      ctx.restore();
       points.forEach((p, i) => {
         const depth = p[0] * s + p[2] * c;
         const px = (p[0] * c - p[2] * s) *  cloudScale + 57 + (x - tx) * .35 + Math.sin(i * 2.4) * scatter;
@@ -48,7 +68,7 @@
         ctx.beginPath(); ctx.arc(px, py, .65 + (depth + .5) * .4, 0, Math.PI * 2); ctx.fill();
       });
       ctx.globalAlpha = 1;
-      canvas.style.transform = `translate3d(${tx - 5 * 72 / 112}px,${ty - 5 * 72 / 112}px,0)`;
+      canvas.style.transform = `translate3d(${tx - 20 * 72 / 112}px,${ty - 20 * 72 / 112}px,0)`;
       frame = requestAnimationFrame(draw);
     }
     const cloudScale = 68;
