@@ -39,11 +39,11 @@
       ctx.clearRect(0, 0, size, size);
       // Exact click hotspot; the cloud follows just below and to the right.
       ctx.save();
-      ctx.translate(20, 20);
+      ctx.translate(28, 28);
       // A tiny carrot; its pointed tip is the exact click position.
       const bounce = Math.sin(t * Math.PI) * (1 - t);
       ctx.rotate(.5 + bounce * .18);
-      const grow = (hover ? 1.12 : 1) + bounce * .12;
+      const grow = 1.2 * ((hover ? 1.12 : 1) + bounce * .12);
       ctx.scale(grow, grow);
       ctx.fillStyle = '#de783e';
       ctx.beginPath();
@@ -71,7 +71,7 @@
         ctx.beginPath(); ctx.arc(px, py, .65 + (depth + .5) * .4, 0, Math.PI * 2); ctx.fill();
       });
       ctx.globalAlpha = 1;
-      canvas.style.transform = `translate3d(${tx - 20 * 72 / 112}px,${ty - 20 * 72 / 112}px,0)`;
+      canvas.style.transform = `translate3d(${tx - 28 * 72 / 112}px,${ty - 28 * 72 / 112}px,0)`;
       frame = requestAnimationFrame(draw);
     }
     const cloudScale = 68;
