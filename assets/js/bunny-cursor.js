@@ -38,7 +38,7 @@
       const scatter = Math.sin(t * Math.PI) * (1 - t) * 25;
       ctx.clearRect(0, 0, size, size);
       // Exact click hotspot; the cloud follows just below and to the right.
-      ctx.fillStyle = '#c2512f'; ctx.beginPath(); ctx.arc(5, 5, 2, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#c2512f'; ctx.beginPath(); ctx.arc(5, 5, 4.5, 0, Math.PI * 2); ctx.fill();
       points.forEach((p, i) => {
         const depth = p[0] * s + p[2] * c;
         const px = (p[0] * c - p[2] * s) *  cloudScale + 57 + (x - tx) * .35 + Math.sin(i * 2.4) * scatter;
