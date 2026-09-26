@@ -40,24 +40,27 @@
       // Exact click hotspot; the cloud follows just below and to the right.
       ctx.save();
       ctx.translate(20, 20);
-      ctx.strokeStyle = ctx.fillStyle = '#c2512f';
-      ctx.lineWidth = 1.6;
-      ctx.lineCap = 'round';
-      // Brackets close around the exact hotspot when a link is targeted.
-      const reach = hover ? 6 : 9;
-      for (const sx of [-1, 1]) for (const sy of [-1, 1]) {
-        ctx.beginPath();
-        ctx.moveTo(sx * reach, sy * (reach - 3));
-        ctx.lineTo(sx * reach, sy * reach);
-        ctx.lineTo(sx * (reach - 3), sy * reach);
+      // A tiny carrot; its pointed tip is the exact click position.
+      const bounce = Math.sin(t * Math.PI) * (1 - t);
+      ctx.rotate(.5 + bounce * .18);
+      const grow = (hover ? 1.12 : 1) + bounce * .12;
+      ctx.scale(grow, grow);
+      ctx.fillStyle = '#de783e';
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo(-3, -3, -7, -10, -5, -13);
+      ctx.quadraticCurveTo(0, -17, 5, -13);
+      ctx.bezierCurveTo(7, -10, 3, -3, 0, 0);
+      ctx.fill();
+      ctx.strokeStyle = '#74864b'; ctx.lineWidth = 2.2; ctx.lineCap = 'round';
+      for (const lean of [-1, 0, 1]) {
+        ctx.beginPath(); ctx.moveTo(0, -14);
+        ctx.quadraticCurveTo(lean * 2, -17, lean * 4, -19);
         ctx.stroke();
       }
-      ctx.beginPath(); ctx.arc(0, 0, hover ? 2.5 : 1.8, 0, Math.PI * 2); ctx.fill();
-      const pulse = (now - burst) / 450;
-      if (pulse >= 0 && pulse < 1) {
-        ctx.globalAlpha = 1 - pulse;
-        ctx.beginPath(); ctx.arc(0, 0, 4 + pulse * 14, 0, Math.PI * 2); ctx.stroke();
-      }
+      ctx.strokeStyle = '#b6522c'; ctx.lineWidth = 1.1;
+      ctx.beginPath(); ctx.moveTo(-3, -10); ctx.lineTo(-.5, -9);
+      ctx.moveTo(3, -6); ctx.lineTo(1, -5.5); ctx.stroke();
       ctx.restore();
       points.forEach((p, i) => {
         const depth = p[0] * s + p[2] * c;
